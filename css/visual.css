@@ -1,7 +1,15 @@
 .visual {
+    margin-top: 100px;
     position: relative;
 }
-
+.visual-fixed{
+    margin-top: 100px !important;
+    /* header의 높이값 */
+}
+@media screen and (max-width : 1024px) {
+    .visual {margin-top: 75px;}
+    .visual-fixed{margin-top: 75px;}
+}
 .visual .sw-visual {}
 
 .visual .sw-visual .swiper-wrapper .swiper-slide {
@@ -22,14 +30,27 @@
     position: relative;
     background: none;
     border-radius: 0;
-    opacity: 0.5;
+    opacity: 1;
     margin: 0 !important;
     width: 30px;
-
+    height: 40px;
     color: #fff;
-    border-bottom: 1px solid #fff;
     transition: all 0.5s;
+    /* border-bottom: 1px solid transparent; */
 }
+
+.sw-visual-pg .swiper-pagination-bullet em {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.sw-visual-pg .swiper-pagination-bullet-active em {}
 
 .sw-visual-pg .swiper-pagination-bullet-active {
     background: none;
@@ -39,19 +60,6 @@
 
     color: #fff;
     border-bottom: 1px solid #fff;
-}
-
-/* 안될거에요. 1,2,3   01, 02, 03 */
-body {
-    counter-reset: sw-count;
-}
-
-.sw-visual-pg .swiper-pagination-bullet::before {
-    counter-increment: sw-count;
-    content: "0"counter(sw-count);
-    position: absolute;
-    left: 0px;
-    top: 0px;
 }
 
 .visual-txt {
@@ -64,6 +72,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
+    padding-left: 45px;
 }
 
 .visual-txt .inner {}
@@ -81,8 +90,7 @@ body {
     margin-top: 20px;
     line-height: 1.6;
     font-size: 17px;
-    color: #fff;
-    opacity: 0.6;
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-family: "Noto Sans KR", sans-serif;
 }
@@ -135,4 +143,31 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+
+@media screen and (max-width : 1024px) {
+    .visual .sw-visual .swiper-wrapper .swiper-slide {
+        height: 575px;
+    }
+    .visual-title {
+        font-size: 40px;
+    }
+    .visual-link{
+        background: #0072ff;
+    }
+    
+}
+@media screen and (max-width : 760px) {
+    .visual .sw-visual .swiper-wrapper .swiper-slide {height: 465px;}
+    .sw-visual-pg .swiper-pagination-bullet-active{
+        width: 90px;
+    }
+    .visual-title {
+        font-size: 34px;
+    }
+    .visual-txt{
+        padding-left: 20px;
+    }
+    
 }

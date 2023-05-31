@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=no" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
@@ -25,16 +27,22 @@
     <script src="js/prefixfree.min.js"></script>
     <script src="js/respond.min.js"></script>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Aos.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- anime.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" ></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
     <script src="js/mbnav.js"></script>
     <script src="js/header.js"></script>
     <script src="js/visual.js"></script>
-    
+    <script src="js/goods.js"></script>
+
 </head>
 
 <body>
@@ -97,7 +105,6 @@
                 </ul>
             </nav>
         </div>
-
         <!-- mb nav -->
         <button class="mb-nav">
             <span></span>
@@ -182,18 +189,18 @@
             </div>
             <div class="visual-txt">
                 <div class="inner">
-                    <h1 class="visual-title">
+                    <h1 class="visual-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                         탄소배출, 지금 멈추지 않으면<br>
                         자연은 연기처럼 사라집니다
                     </h1>
 
-                    <p class="visual-desc">
+                    <p class="visual-desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                         탄소중립 대응ㆍ친환경 제품을 끊임없이 도전,<br>
                         연구하는 소재전문 업체 애니켐 입니다.
                     </p>
 
                     <a href="#" class="visual-link">
-                        회사소개 
+                        회사소개
                         <i class="fa-solid fa-angle-right"></i>
                     </a>
                 </div>
@@ -202,8 +209,98 @@
         <!--// visual -->
         <!-- goods -->
         <section class="goods">
-            <div class="inner"></div>
+            <div class="goods-wrap">
+                <div class="goods-menu">
+                    <h2 class="goods-title">
+                        <strong>탄소중립 대응</strong> <br />
+                        친환경 제품
+                    </h2>
+                    <p class="goods-desc">
+                        탄소중립 대응 친환경 제품을 끊임없이 도전, <br />
+                        연구하는 소재전문 업체입니다.
+                    </p>
+                    <ul class="goods-list">
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                    </ul>
+                    <div class="sw-goods-control">
+                        <button class="sw-goods-prev">
+                            <img src="images/prev.png" alt="" />
+                        </button>
+                        <button class="sw-goods-pause">
+                            <i class="fa-solid fa-pause"></i>
+                        </button>
+                        <button class="sw-goods-next">
+                            <img src="images/next.png" alt="" />
+                        </button>
+                    </div>
+                </div>
+                <div class="goods-slide">
+                    <div class="swiper sw-goods">
+                        <div class="swiper-wrapper">
+                            <!-- json 변경예정 -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="good-item">
+                                        <div class="good-item-img">
+                                            <img src="images/good1.jpg" alt="">
+                                        </div>
+                                        <div class="good-item-txt">
+                                            <p>타이틀입니다</p>
+                                            <span>친환경 아이스팩 포장재, 에어캡 봉투</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="good-link">
+                                    <div class="good-item">
+                                        <div class="good-item-img">
+                                            <img src="images/good1.jpg" alt="">
+                                        </div>
+                                        <div class="good-item-txt">
+                                            <p>타이틀입니다</p>
+                                            <span>친환경 아이스팩 포장재, 에어캡 봉투</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="good-link">
+                                    <div class="good-item">
+                                        <div class="good-item-img">
+                                            <img src="images/good1.jpg" alt="">
+                                        </div>
+                                        <div class="good-item-txt">
+                                            <p>타이틀입니다</p>
+                                            <span>친환경 아이스팩 포장재, 에어캡 봉투</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="good-item">
+                                        <div class="good-item-img">
+                                            <img src="images/good1.jpg" alt="">
+                                        </div>
+                                        <div class="good-item-txt">
+                                            <p>타이틀입니다</p>
+                                            <span>친환경 아이스팩 포장재, 에어캡 봉투</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+
         <!--// goods -->
         <!-- company -->
         <section class="company">

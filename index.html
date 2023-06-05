@@ -1,328 +1,301 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=no" />
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="images/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="description" content="탄소중립 대응 친환경 플라스틱 신소재 전문업체 " />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="애니켐" />
+        <meta property="og:description" content="탄소중립 대응 친환경 플라스틱 신소재 전문업체" />
+        <meta property="og:image" content="http://www.any-chem.com/sh_img/hd/top_menu/logo.png" />
+        <meta property="og:url" content="http://www.any-chem.com" />
+        <title>애니켐</title>
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        <script src="js/prefixfree.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Aos.js -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- anime.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <!-- Swiper -->
+        <link rel="stylesheet" href="js/swiper-4.5.1/css/swiper.min.css" />
+        <script src="js/swiper-4.5.1/js/swiper.min.js"></script>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=no" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="images/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="naver-site-verification" content="5b0d2018b8cf07cac61b278a1705fc4a4ac45bdb" />
-    <meta name="description" content="탄소중립 대응 친환경 플라스틱 신소재 전문업체 " />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="애니켐" />
-    <meta property="og:description" content="탄소중립 대응 친환경 플라스틱 신소재 전문업체" />
-    <meta property="og:image" content="http://www.any-chem.com/sh_img/hd/top_menu/logo.png" />
-    <meta property="og:url" content="http://www.any-chem.com" />
-    <title>애니켐</title>
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    <script src="js/prefixfree.min.js"></script>
-    <script src="js/respond.min.js"></script>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Aos.js -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- anime.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/mbnav.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/visual.js"></script>
+        <script src="js/goods.js"></script>
+    </head>
 
-    <script src="js/script.js"></script>
-    <script src="js/mbnav.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/visual.js"></script>
-    <script src="js/goods.js"></script>
-
-</head>
-
-<body>
-    <div class="wrap">
-        <!-- mb dim -->
-        <div class="mb-wrap">
-            <nav class="mb-gnb">
-                <div class="mb-top-menu">
-                    <a href="#">회원가입</a>
-                    <a href="#">로그인</a>
-                    <a href="#">ENG</a>
-                </div>
-                <ul class="side-menu">
-                    <li>
-                        <a href="#"><span>회사소개</span>
-                            <i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="submenu">
-                            <li>
-                                <a href="#">인사말</a>
-                            </li>
-                            <li><a href="#">연혁</a></li>
-                            <li><a href="#">오시는 길</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><span>탄소중립대응 친환경 제품</span><i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="submenu">
-                            <li><a href="#">플라스틱 포장재</a></li>
-                            <li><a href="#">농업용 필름</a></li>
-                            <li><a href="#">자동차용 소재</a></li>
-                            <li><a href="#">코팅종이</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><span>뉴스.보도자료</span><i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="submenu">
-                            <li><a href="#">개발제품 뉴스 . 보도자료</a></li>
-                            <li><a href="#">탄소중립 관련 뉴스 . 보도자료</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><span>인증</span><i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="submenu">
-                            <li><a href="#">UL인증</a></li>
-                            <li><a href="#">녹색인증</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><span>제품문의</span><i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="submenu">
-                            <li><a href="#">제품문의</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><span>고객센터</span><i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="submenu">
-                            <li><a href="#">공지사항</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <!-- mb nav -->
-        <button class="mb-nav">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <!-- header -->
-        <header class="header">
-            <a href="#" class="logo">
-                <img src="images/logo.png" alt="애니켐" />
-            </a>
-            <nav class="nav">
-                <ul class="gnb">
-                    <li>
-                        <a href="#">회사소개</a>
-                        <ul class="submenu">
-                            <li><a href="#">인사말</a></li>
-                            <li><a href="#">연혁</a></li>
-                            <li><a href="#">오시는 길</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">탄소중립대응 친환경 제품</a>
-                        <ul class="submenu">
-                            <li><a href="#">플라스틱 포장재</a></li>
-                            <li><a href="#">농업용 필름</a></li>
-                            <li><a href="#">자동차용 소재</a></li>
-                            <li><a href="#">코팅종이</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">뉴스.보도자료</a>
-                        <ul class="submenu">
-                            <li><a href="#">개발제품 뉴스 . 보도자료</a></li>
-                            <li><a href="#">탄소중립 관련 뉴스 . 보도자료</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">인증</a>
-                        <ul class="submenu">
-                            <li><a href="#">UL인증</a></li>
-                            <li><a href="#">녹색인증</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">제품문의</a>
-                        <ul class="submenu">
-                            <li><a href="#">제품문의</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">고객센터</a>
-                        <ul class="submenu">
-                            <li><a href="#">공지사항</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <span class="nav-blue-bar"></span>
-            </nav>
-            <div class="side-wrap">
-                <ul class="member">
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">ENG</a></li>
-                </ul>
+    <body>
+        <div class="wrap">
+            <div class=""></div>
+            <div class="mb-wrap">
+                .hstry
             </div>
-        </header>
-        <!--// header -->
-        <!-- visual -->
-        <section class="visual">
-            <div class="visual-slide">
-                <div class="swiper sw-visual">
-                    <div class="swiper-wrapper">
-                        <!-- json연동 -->
-                        <!-- <div class="swiper-slide" style="background-image: url(images/img1.jpg);"></div>
-                        <div class="swiper-slide" style="background-image: url(images/img2.jpg);"></div> -->
+            <!-- mb dim -->
+            <div class="mb-wrap">
+                <nav class="mb-gnb">
+                    <div class="mb-top-menu">
+                        <a href="#">회원가입</a>
+                        <a href="#">로그인</a>
+                        <a href="#">ENG</a>
                     </div>
-                </div>
-                <div class="sw-visual-control">
-                    <div class="sw-visual-pg"></div>
-                </div>
-            </div>
-            <div class="visual-txt">
-                <div class="inner">
-                    <h1 class="visual-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                        탄소배출, 지금 멈추지 않으면<br>
-                        자연은 연기처럼 사라집니다
-                    </h1>
-
-                    <p class="visual-desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                        탄소중립 대응ㆍ친환경 제품을 끊임없이 도전,<br>
-                        연구하는 소재전문 업체 애니켐 입니다.
-                    </p>
-
-                    <a href="#" class="visual-link">
-                        회사소개
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!--// visual -->
-        <!-- goods -->
-        <section class="goods">
-            <div class="goods-wrap">
-                <div class="goods-menu">
-                    <h2 class="goods-title">
-                        <strong>탄소중립 대응</strong> <br />
-                        친환경 제품
-                    </h2>
-                    <p class="goods-desc">
-                        탄소중립 대응 친환경 제품을 끊임없이 도전, <br />
-                        연구하는 소재전문 업체입니다.
-                    </p>
-                    <ul class="goods-list">
-                        <li><a href="#">메뉴</a></li>
-                        <li><a href="#">메뉴</a></li>
-                        <li><a href="#">메뉴</a></li>
-                        <li><a href="#">메뉴</a></li>
+                    <ul class="side-menu">
+                        <li>
+                            <a href="#"><span>회사소개</span> <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">인사말</a>
+                                </li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>탄소중립대응 친환경 제품</span><i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#">플라스틱 포장재</a></li>
+                                <li><a href="#">농업용 필름</a></li>
+                                <li><a href="#">자동차용 소재</a></li>
+                                <li><a href="#">코팅종이</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>뉴스.보도자료</span><i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#">개발제품 뉴스 . 보도자료</a></li>
+                                <li><a href="#">탄소중립 관련 뉴스 . 보도자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>인증</span><i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#">UL인증</a></li>
+                                <li><a href="#">녹색인증</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>제품문의</span><i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#">제품문의</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>고객센터</span><i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    <div class="sw-goods-control">
-                        <button class="sw-goods-prev">
-                            <img src="images/prev.png" alt="" />
-                        </button>
-                        <button class="sw-goods-pause">
-                            <i class="fa-solid fa-pause"></i>
-                        </button>
-                        <button class="sw-goods-next">
-                            <img src="images/next.png" alt="" />
-                        </button>
+                </nav>
+            </div>
+            <!-- mb nav -->
+            <button class="mb-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- header -->
+            <header class="header">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="애니켐" />
+                </a>
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">회사소개</a>
+                            <ul class="submenu">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">탄소중립대응 친환경 제품</a>
+                            <ul class="submenu">
+                                <li><a href="#">플라스틱 포장재</a></li>
+                                <li><a href="#">농업용 필름</a></li>
+                                <li><a href="#">자동차용 소재</a></li>
+                                <li><a href="#">코팅종이</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">뉴스.보도자료</a>
+                            <ul class="submenu">
+                                <li><a href="#">개발제품 뉴스 . 보도자료</a></li>
+                                <li><a href="#">탄소중립 관련 뉴스 . 보도자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">인증</a>
+                            <ul class="submenu">
+                                <li><a href="#">UL인증</a></li>
+                                <li><a href="#">녹색인증</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">제품문의</a>
+                            <ul class="submenu">
+                                <li><a href="#">제품문의</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="submenu">
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="nav-blue-bar"></span>
+                </nav>
+                <div class="side-wrap">
+                    <ul class="member">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">ENG</a></li>
+                    </ul>
+                </div>
+            </header>
+            <!--// header -->
+            <!-- visual -->
+            <section class="visual">
+                <div class="visual-slide">
+                    <div class="swiper sw-visual">
+                        <div class="swiper-wrapper">
+                            <!-- json연동 -->
+                            <!-- <div class="swiper-slide" style="background-image: url(images/img1.jpg);"></div>
+                        <div class="swiper-slide" style="background-image: url(images/img2.jpg);"></div> -->
+                        </div>
+                    </div>
+                    <div class="sw-visual-control">
+                        <div class="sw-visual-pg"></div>
                     </div>
                 </div>
-                <div class="goods-slide">
-                    <div class="swiper sw-goods">
-                        <div class="swiper-wrapper">
-                            <!-- json 변경예정 -->
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="good-item">
-                                        <div class="good-item-img">
-                                            <img src="images/good1.jpg" alt="">
+                <div class="visual-txt">
+                    <div class="inner">
+                        <h1 class="visual-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            탄소배출, 지금 멈추지 않으면<br />
+                            자연은 연기처럼 사라집니다
+                        </h1>
+
+                        <p class="visual-desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            탄소중립 대응ㆍ친환경 제품을 끊임없이 도전,<br />
+                            연구하는 소재전문 업체 애니켐 입니다.
+                        </p>
+
+                        <a href="#" class="visual-link">
+                            회사소개
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--// visual -->
+            <!-- goods -->
+            <section class="goods">
+                <div class="goods-wrap">
+                    <div class="goods-menu">
+                        <h2 class="goods-title">
+                            <strong>탄소중립 대응</strong> <br />
+                            친환경 제품
+                        </h2>
+                        <p class="goods-desc">
+                            탄소중립 대응 친환경 제품을 끊임없이 도전, <br />
+                            연구하는 소재전문 업체입니다.
+                        </p>
+                        <ul class="goods-list">
+                            <!-- json 연동 -->
+                        </ul>
+                        <div class="sw-goods-control">
+                            <button class="sw-goods-prev">
+                                <img src="images/prev.png" alt="" />
+                            </button>
+                            <button class="sw-goods-pause">
+                                <i class="fa-solid fa-pause"></i>
+                            </button>
+                            <button class="sw-goods-next">
+                                <img src="images/next.png" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="goods-slide">
+                        <div class="swiper-container sw-goods">
+                            <div class="swiper-wrapper">
+                                <!-- json 변경 예정 -->
+                                <div class="swiper-slide">
+                                    <a href="#" class="good-link">
+                                        <div class="good-item">
+                                            <div class="good-item-img">
+                                                <img src="images/good1.jpg" alt="" />
+                                            </div>
+                                            <div class="good-item-txt">
+                                                <p>타이틀입니다.</p>
+                                                <span>친환경 농업용 멀칭 필름, 녹색기술인증 제품</span>
+                                            </div>
                                         </div>
-                                        <div class="good-item-txt">
-                                            <p>타이틀입니다</p>
-                                            <span>친환경 아이스팩 포장재, 에어캡 봉투</span>
-                                        </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <a href="#" class="good-link">
-                                    <div class="good-item">
-                                        <div class="good-item-img">
-                                            <img src="images/good1.jpg" alt="">
-                                        </div>
-                                        <div class="good-item-txt">
-                                            <p>타이틀입니다</p>
-                                            <span>친환경 아이스팩 포장재, 에어캡 봉투</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#" class="good-link">
-                                    <div class="good-item">
-                                        <div class="good-item-img">
-                                            <img src="images/good1.jpg" alt="">
-                                        </div>
-                                        <div class="good-item-txt">
-                                            <p>타이틀입니다</p>
-                                            <span>친환경 아이스팩 포장재, 에어캡 봉투</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <div class="good-item">
-                                        <div class="good-item-img">
-                                            <img src="images/good1.jpg" alt="">
-                                        </div>
-                                        <div class="good-item-txt">
-                                            <p>타이틀입니다</p>
-                                            <span>친환경 아이스팩 포장재, 에어캡 봉투</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-
-        <!--// goods -->
-        <!-- company -->
-        <section class="company">
-            <div class="inner"></div>
-        </section>
-        <!--// company -->
-        <!-- news -->
-        <section class="news">
-            <div class="inner"></div>
-        </section>
-        <!--// news -->
-        <!-- info -->
-        <section class="info">
-            <div class="inner"></div>
-        </section>
-        <!--// info -->
-        <!-- footer -->
-        <section class="footer">
-            <div class="inner"></div>
-        </section>
-        <!--// footer -->
-    </div>
-</body>
-
+            <!--// goods -->
+            <!-- company -->
+            <section class="company">
+                <div class="inner">
+                    <div class="company-wrap">
+                        <h2>저탄소사회 구현을 위한 최고의 선택</h2>
+                        <p>탄소중립 대응 친환경 제품을 끊임없이 도전, <br>
+                            연구하는 소재전문 업체입니다.</p>
+                        <div class="company-list">
+                            <div class="company-box">
+                                <div class="company-qa">
+                                    <span>제품문의</span>
+                                </div>
+                            </div>
+                            <div class="company-box">
+                                <div class="company-about">
+                                    <span>회사소개</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--// company -->
+            <!-- news -->
+            <section class="news">
+                <div class="inner"></div>
+            </section>
+            <!--// news -->
+            <!-- info -->
+            <section class="info">
+                <div class="inner"></div>
+            </section>
+            <!--// info -->
+            <!-- footer -->
+            <section class="footer">
+                <div class="inner"></div>
+            </section>
+            <!--// footer -->
+        </div>
+    </body>
 </html>
